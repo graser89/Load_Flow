@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f4651ba3-d742-42a0-9937-7fcb0acf5a17" name="Грамма@ГРАММА-ПК 2012-05-29 15:14:29" runUser="Грамма-ПК\Грамма" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="3a90fc6b-65fa-4d6c-8067-52c732384560">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Грамма_ГРАММА-ПК 2012-05-29 15_14_29">
+      <DeploymentItem filename="C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-29T15:14:29.3489957+04:00" queuing="2012-05-29T15:14:29.6230114+04:00" start="2012-05-29T15:14:29.6930154+04:00" finish="2012-05-29T15:14:30.2140452+04:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="RaschetTest_digrapg1" storage="c:\users\грамма\documents\visual studio 2010\projects\windowsgraphica_10_03_12\windowsgraphica_10_03_12\windowsgraphica\testwindowsgraphica\bin\debug\testwindowsgraphica.dll" id="a0cf66c4-893d-fa2c-65b9-1bad41ac0061">
+      <Execution id="0e950016-1298-4bf6-b76b-546ffc8275f7" />
+      <TestMethod codeBase="C:/Users/Грамма/Documents/Visual Studio 2010/Projects/WindowsGraphica_10_03_12/WindowsGraphica_10_03_12/WindowsGraphica/TestWindowsGraphica/bin/Debug/TestWindowsGraphica.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestWindowsGraphica.ShemaTest, TestWindowsGraphica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RaschetTest_digrapg1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a0cf66c4-893d-fa2c-65b9-1bad41ac0061" executionId="0e950016-1298-4bf6-b76b-546ffc8275f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0e950016-1298-4bf6-b76b-546ffc8275f7" testId="a0cf66c4-893d-fa2c-65b9-1bad41ac0061" testName="RaschetTest_digrapg1" computerName="ГРАММА-ПК" duration="00:00:00.1218135" startTime="2012-05-29T15:14:29.6550132+04:00" endTime="2012-05-29T15:14:30.1930440+04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e950016-1298-4bf6-b76b-546ffc8275f7">
+      <Output>
+        <ErrorInfo>
+          <Message>Ошибка в Assert.Inconclusive. Невозможно проверить метод, не возвращающий значение.</Message>
+          <StackTrace>   в TestWindowsGraphica.ShemaTest.RaschetTest_digrapg1() в C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\ShemaTest.cs:строка 2712
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

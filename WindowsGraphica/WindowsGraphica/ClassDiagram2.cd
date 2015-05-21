@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WindowsGraphica.DrawPanel" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAQAAAAEAAAAAQAIAAAAAAAAAAAEQEAABAAAAEAA=</HashCode>
+      <FileName>DrawPanel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WindowsGraphica.Form1" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CYDQQKIEjCPoVNMAJMmGNikz4Hz8iISOQAaYYwFFLB4=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGraphica.Form2" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAQAACABAACAAAZAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Form2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGraphica.Grahpica" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QDIAAABACAABAg4MACIAAAACwDAAAoAQCIIAAQCEEAI=</HashCode>
+      <FileName>Graphica.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WindowsGraphica.imgUzel" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAQAAAACAIAAgAEIAAAJQAAAAAIAIAQAABgAAIAcAA=</HashCode>
+      <FileName>imgUzel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WindowsGraphica.imgVetv">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAABAAAAAgAEgAAAAAAAAAgAAAAQAAAAAAIAEAg=</HashCode>
+      <FileName>imgUzel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WindowsGraphica.Program" Collapsed="true">
+    <Position X="7.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGraphica.Shema" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEkAABhAgICIAAAAEAAAAAABGAyAgFFQgAAAAIgIMBA=</HashCode>
+      <FileName>Shema.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WindowsGraphica.regim" Collapsed="true">
+    <Position X="3.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAkBABgAAQACAAUAgDAAAACEAAAAApAABAAEkGBAE=</HashCode>
+      <FileName>Shema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGraphica.GrafikNagruzki" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAgAAAAAAAEAAAABBAIBAAACAQMAAAACAICEAA=</HashCode>
+      <FileName>Uzel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGraphica.Uzel" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BkAQBAwQAAAAAAQEAAAAFICIEJiAiOCUAlggAAJ4EAA=</HashCode>
+      <FileName>Uzel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WindowsGraphica.RPN" Collapsed="true">
+    <Position X="4.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAABAQAAAUAAQANIAAAAAAAAAwARAAQACAEAg=</HashCode>
+      <FileName>Uzel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGraphica.vetv">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAABAAIAAAIAAEAAAABAAAGCgAIEAwABAQAAgAUQg=</HashCode>
+      <FileName>vetv.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGraphica.Properties.Resources" Collapsed="true">
+    <Position X="6" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsGraphica.Properties.Settings" Collapsed="true">
+    <Position X="6.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="WindowsGraphica.S_imgUzel" Collapsed="true">
+    <Position X="4" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAQAAAACAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAEAA=</HashCode>
+      <FileName>Graphica.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="WindowsGraphica.IDraw">
+    <Position X="4.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAIAAAIQAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graphica.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WindowsGraphica.IXmlControl">
+    <Position X="2.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAA=</HashCode>
+      <FileName>Graphica.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

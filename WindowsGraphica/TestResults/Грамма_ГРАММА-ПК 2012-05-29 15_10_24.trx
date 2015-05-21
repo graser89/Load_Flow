@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6c78577a-4dbb-40c4-9aaa-fcf735612d3d" name="Грамма@ГРАММА-ПК 2012-05-29 15:10:24" runUser="Грамма-ПК\Грамма" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="3a90fc6b-65fa-4d6c-8067-52c732384560">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Грамма_ГРАММА-ПК 2012-05-29 15_10_24">
+      <DeploymentItem filename="C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-29T15:10:24.1009683+04:00" queuing="2012-05-29T15:10:24.3749840+04:00" start="2012-05-29T15:10:24.3859846+04:00" finish="2012-05-29T15:10:24.8270098+04:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="RaschetTest_digrapg1" storage="c:\users\грамма\documents\visual studio 2010\projects\windowsgraphica_10_03_12\windowsgraphica_10_03_12\windowsgraphica\testwindowsgraphica\bin\debug\testwindowsgraphica.dll" id="a0cf66c4-893d-fa2c-65b9-1bad41ac0061">
+      <Execution id="7d08a90f-ceda-4379-9027-2140c5b24a69" />
+      <TestMethod codeBase="C:/Users/Грамма/Documents/Visual Studio 2010/Projects/WindowsGraphica_10_03_12/WindowsGraphica_10_03_12/WindowsGraphica/TestWindowsGraphica/bin/Debug/TestWindowsGraphica.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestWindowsGraphica.ShemaTest, TestWindowsGraphica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RaschetTest_digrapg1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a0cf66c4-893d-fa2c-65b9-1bad41ac0061" executionId="7d08a90f-ceda-4379-9027-2140c5b24a69" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="7d08a90f-ceda-4379-9027-2140c5b24a69" testId="a0cf66c4-893d-fa2c-65b9-1bad41ac0061" testName="RaschetTest_digrapg1" computerName="ГРАММА-ПК" duration="00:00:00.0626755" startTime="2012-05-29T15:10:24.3899849+04:00" endTime="2012-05-29T15:10:24.8040085+04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d08a90f-ceda-4379-9027-2140c5b24a69">
+      <Output>
+        <ErrorInfo>
+          <Message>Метод проверки TestWindowsGraphica.ShemaTest.RaschetTest_digrapg1 выдал исключение: System.IO.IOException: Файл "C:\Users\Грамма\Documents\проба111.csv" уже существует..</Message>
+          <StackTrace>    в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в TestWindowsGraphica.ShemaTest.RaschetTest_digrapg1() в C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\ShemaTest.cs:строка 2679
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

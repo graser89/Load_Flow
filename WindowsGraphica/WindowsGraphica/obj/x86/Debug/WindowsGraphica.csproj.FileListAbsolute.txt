@@ -1,0 +1,61 @@
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\WindowsGraphica\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form1.resources
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form2.resources
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Properties.Resources.resources
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\WindowsGraphica\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\WindowsGraphica\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.exe
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\WindowsGraphica\bin\Debug\alglibnet2.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.exe
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\WindowsGraphica\bin\Debug\alglibnet2.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form1.resources
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form2.resources
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Properties.Resources.resources
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.exe
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.pdb
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form1.resources
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form2.resources
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Properties.Resources.resources
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\WindowsGraphica\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.exe
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form1.resources
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form2.resources
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Properties.Resources.resources
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.exe
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form1.resources
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form2.resources
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Properties.Resources.resources
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.exe
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.pdb
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.csprojResolveAssemblyReference.cache
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form1.resources
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form2.resources
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Properties.Resources.resources
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.csproj.GenerateResource.Cache

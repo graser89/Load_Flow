@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="79065077-82a3-4ea2-92e9-175340f67535" name="Грамма@ГРАММА-ПК 2012-05-29 16:32:26" runUser="Грамма-ПК\Грамма" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="3a90fc6b-65fa-4d6c-8067-52c732384560">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Грамма_ГРАММА-ПК 2012-05-29 16_32_26">
+      <DeploymentItem filename="C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-29T16:32:26.0374870+04:00" queuing="2012-05-29T16:32:28.7126400+04:00" start="2012-05-29T16:32:28.9656545+04:00" finish="2012-05-29T16:35:37.4244337+04:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="ГРАММА-ПК" outcome="Error" timestamp="2012-05-29T16:35:37.3954320+04:00">
+        <Text>Неожиданный выход из тестового хост-процесса.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="RaschetTest_digrapg1" storage="c:\users\грамма\documents\visual studio 2010\projects\windowsgraphica_10_03_12\windowsgraphica_10_03_12\windowsgraphica\testwindowsgraphica\bin\debug\testwindowsgraphica.dll" id="a0cf66c4-893d-fa2c-65b9-1bad41ac0061">
+      <Execution id="125bf1e6-8fb2-4a6b-ab30-672f8784b504" />
+      <TestMethod codeBase="C:/Users/Грамма/Documents/Visual Studio 2010/Projects/WindowsGraphica_10_03_12/WindowsGraphica_10_03_12/WindowsGraphica/TestWindowsGraphica/bin/Debug/TestWindowsGraphica.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestWindowsGraphica.ShemaTest, TestWindowsGraphica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RaschetTest_digrapg1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a0cf66c4-893d-fa2c-65b9-1bad41ac0061" executionId="125bf1e6-8fb2-4a6b-ab30-672f8784b504" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="125bf1e6-8fb2-4a6b-ab30-672f8784b504" testId="a0cf66c4-893d-fa2c-65b9-1bad41ac0061" testName="RaschetTest_digrapg1" computerName="ГРАММА-ПК" duration="00:03:08.2147653" startTime="2012-05-29T16:32:29.2096684+04:00" endTime="2012-05-29T16:35:37.4244337+04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="125bf1e6-8fb2-4a6b-ab30-672f8784b504">
+    </UnitTestResult>
+  </Results>
+</TestRun>

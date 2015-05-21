@@ -1,0 +1,48 @@
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\TestWindowsGraphica\bin\Debug\TestWindowsGraphica.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\TestWindowsGraphica\bin\Debug\TestWindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\TestWindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\TestWindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\TestWindowsGraphica\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica\TestWindowsGraphica\bin\Debug\alglibnet2.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\TestWindowsGraphica\bin\Debug\TestWindowsGraphica.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\TestWindowsGraphica\bin\Debug\TestWindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\TestWindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\TestWindowsGraphica\bin\Debug\alglibnet2.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\TestWindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\TestWindowsGraphica\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\Новая папка (2)\WindowsGraphica_14_11_11\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.pdb
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\TestWindowsGraphica\bin\Debug\TestWindowsGraphica.dll
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\TestWindowsGraphica\bin\Debug\TestWindowsGraphica.pdb
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\TestWindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\TestWindowsGraphica\bin\Debug\alglibnet2.dll
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\TestWindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\TestWindowsGraphica\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.dll
+C:\Users\Дмитрий\Documents\Visual Studio 2010\Projects\WindowsGraphica_15_11_11\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\TestWindowsGraphica.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\TestWindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\alglibnet2.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\TestWindowsGraphica\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_01_02_12\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\TestWindowsGraphica.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\TestWindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\alglibnet2.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.dll
+C:\Users\Грамма\Documents\Visual Studio 2010\Projects\WindowsGraphica_10_03_12\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.pdb
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\TestWindowsGraphica.dll
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\TestWindowsGraphica.pdb
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\alglibnet2.dll
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.csprojResolveAssemblyReference.cache
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.dll
+C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\TestWindowsGraphica\obj\Debug\TestWindowsGraphica.pdb
