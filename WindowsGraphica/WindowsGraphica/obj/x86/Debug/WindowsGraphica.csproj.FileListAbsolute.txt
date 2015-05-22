@@ -56,6 +56,5 @@ C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\W
 C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.pdb
 C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.csprojResolveAssemblyReference.cache
 C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form1.resources
-C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form2.resources
 C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Properties.Resources.resources
 C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.csproj.GenerateResource.Cache

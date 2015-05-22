@@ -16,51 +16,27 @@ namespace WindowsGraphica
         //public delegate void Nomer_Vetvi_Changed(Object sender, Chanche_nomer_Vetvi args);
         //public delegate void Nomer_Uzla_Changed(Object sender, Chanche_nomer_Uzla args);
 
-        DrawPanel panel1;
-        Grahpica g;
+        
         Shema shema1, shema2, shema3;
-        int pWidth = 800;
-        int pHeight = 800;
-        Automatic_RN ARN;
-        ARKT AR;
-        Uzel u;
+
         //public event U_uzla_Change Izmenenie_naprig_uzla;
 
 
         public Form1()
         {
             
-            g = new Grahpica();
-            // 
-            // panel1
-            //            
-            this.panel1 = new DrawPanel();
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.TabIndex = 0;
-            panel1.Holst_width = pWidth;
-            panel1.Holst_height = pHeight;
-            panel1.Scale(g.Scale);
             
-            panel1.AutoSize = false;
-
-
             InitializeComponent();
-            this.tabPage1.Controls.Add(this.panel1);
+            
             tabControl1.TabPages[0].AutoScroll = true;
 
 
             shema1 = new Shema();        
             
-            ARN = new Automatic_RN(shema1);
-            AR = new ARKT(shema1);
- 
+            
             bindingSource1.DataSource = shema1.Uzli;
             bindingSource2.DataSource = shema1.Vetvi;
-            bindingSource3.DataSource = shema1.Grafiki;
-            bindingSource4.DataSource = shema1.Rpni;
-            bindingSource5.DataSource = ARN.Tochki_Kontrola;
+            
            // bindingSource6.DataSource = shema1.ARKTi;
 
             //Определяем размер холста
@@ -68,23 +44,14 @@ namespace WindowsGraphica
             
 
             //Поведение кнопки Add_Img_uzel
-            g.Shema = shema1;
-            g.connectGui(panel1, button1);
-
-            
-
             
             //
-            button2.Click += button_Save_Click;
-            button3.Click += button_Open_Click;
         }
                        
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-             g.Scale = (float)numericUpDown1.Value / 100;
-             panel1.Scale(g.Scale);
-             panel1.Invalidate();
+             
         }
 
         #region XML
@@ -114,10 +81,7 @@ namespace WindowsGraphica
             
 
             shema1.SaveToXml(XmlOut);
-            g.SaveToXml(XmlOut);
-            panel1.SaveToXml(XmlOut);
-            ARN.SaveToXml(XmlOut);
-
+            
             XmlOut.WriteEndElement();
             XmlOut.WriteEndDocument();
             XmlOut.Close();
@@ -159,35 +123,11 @@ namespace WindowsGraphica
                     shema1.LoadFromFile(xmlIn);
                     bindingSource1.DataSource = shema1.Uzli;
                     bindingSource2.DataSource = shema1.Vetvi;
-                    bindingSource3.DataSource = shema1.Grafiki;
-                    bindingSource4.DataSource = shema1.Rpni;
+                    
                     //bindingSource6.DataSource = shema1.ARKTi;
                 }                
                 
-                if (xmlIn.Name == "Graphica")
-                {
-                    g.disconnect();
-                    g = new Grahpica();
-                    g.Shema = shema1;
-                    g.LoadFromFile(xmlIn);                    
-                }
-
-                if (xmlIn.Name == "DrawPanel")
-                {
-                    panel1 = new DrawPanel();
-                    panel1.LoadFromFile(xmlIn);
-                    this.tabPage1.Controls.RemoveAt(0);
-                    this.tabPage1.Controls.Add(this.panel1);
-                    g.connectGui(panel1, button1);
-                    panel1.Scale(g.Scale);
-                }
-
-                if (xmlIn.Name == "Automatic_RN")
-                {
-                    ARN = new Automatic_RN(shema1);
-                    ARN.LoadFromFile(xmlIn);
-                    bindingSource5.DataSource = ARN.Tochki_Kontrola;
-                }   
+                
 
 /*                foreach (IXmlControl ITEM in nabor)
                 {
@@ -203,7 +143,7 @@ namespace WindowsGraphica
             
             xmlIn.Close();
             fs.Close();
-            AR = new ARKT(shema1);
+            
         }
 
 
@@ -219,7 +159,7 @@ namespace WindowsGraphica
 
             OpenXml(filename);
             
-            panel1.Invalidate();
+            
 
         }
 
@@ -267,7 +207,7 @@ namespace WindowsGraphica
                 this.Text = "Программа расчета УР.      Сейчас открыт файл   " + filename;
                 bindingSource1.DataSource = shema1.Uzli;
                 bindingSource2.DataSource = shema1.Vetvi;
-                g.Shema = shema1;
+                
             }
         }
 
@@ -290,12 +230,12 @@ namespace WindowsGraphica
 
         private void button4_Click(object sender, EventArgs e)
         {
-            shema1.Raschet(Flat_Start.Checked, Start_Algorithm.Checked, polar_SK.Checked);
+            shema1.Raschet(true, true, true);
             //MessageBox.Show(shema1.Nomera_uzlov.Count.ToString());
             shema1.SaveMatrci_Y();
             dataGridView1.Refresh();
             dataGridView2.Refresh();
-            tabPage1.Refresh();
+            
         }
 
         private void сравнитьРезультатыСЦДУToolStripMenuItem_Click(object sender, EventArgs e)
@@ -317,36 +257,36 @@ namespace WindowsGraphica
             else
             {
 
-                    shema3.Raschet(Flat_Start.Checked, Start_Algorithm.Checked, polar_SK.Checked);
-                    double error_amplitude = Math.Abs(shema2.Uzli[0].U_mod - shema3.Find_Uzel_by_Nomer(shema2.Uzli[0].Nomer_uzla).U_mod);
-                    double error_angle = Math.Abs(shema2.Uzli[0].Angle - shema3.Find_Uzel_by_Nomer(shema2.Uzli[0].Nomer_uzla).Angle_degree);
+                    shema3.Raschet(true, true, true);
+                    double error_amplitude = Math.Abs(shema2.Uzli[0].UMod - shema3.Find_Uzel_by_Nomer(shema2.Uzli[0].NomerUzla).UMod);
+                    double error_angle = Math.Abs(shema2.Uzli[0].Angle - shema3.Find_Uzel_by_Nomer(shema2.Uzli[0].NomerUzla).AngleDegree);
                     double er_Qgen=0, er_amp_average=0;
                     string er_amp, er_angle, er_Pbas=null, er_Qbas=null, er_Qgen_string, er_amp_av;
                     int kolvo_OGU = 0, kolvo_OGU1 = 0;
                     foreach (Uzel item in shema2.Uzli)
                     {
-                        er_amp_average=er_amp_average+Math.Abs(item.U_mod - shema3.Find_Uzel_by_Nomer(item.Nomer_uzla).U_mod);
-                        if (Math.Abs(item.U_mod - shema3.Find_Uzel_by_Nomer(item.Nomer_uzla).U_mod) > error_amplitude)
-                            error_amplitude = Math.Abs(item.U_mod - shema3.Find_Uzel_by_Nomer(item.Nomer_uzla).U_mod);
-                        if (Math.Abs(item.Angle - shema3.Find_Uzel_by_Nomer(item.Nomer_uzla).Angle_degree) > error_angle)
-                            error_angle = Math.Abs(item.Angle - shema3.Find_Uzel_by_Nomer(item.Nomer_uzla).Angle_degree);
-                        if (item.Tip_uzla == -1)
+                        er_amp_average=er_amp_average+Math.Abs(item.UMod - shema3.Find_Uzel_by_Nomer(item.NomerUzla).UMod);
+                        if (Math.Abs(item.UMod - shema3.Find_Uzel_by_Nomer(item.NomerUzla).UMod) > error_amplitude)
+                            error_amplitude = Math.Abs(item.UMod - shema3.Find_Uzel_by_Nomer(item.NomerUzla).UMod);
+                        if (Math.Abs(item.Angle - shema3.Find_Uzel_by_Nomer(item.NomerUzla).AngleDegree) > error_angle)
+                            error_angle = Math.Abs(item.Angle - shema3.Find_Uzel_by_Nomer(item.NomerUzla).AngleDegree);
+                        if (item.TipUzla == -1)
                         {
-                            er_Pbas = Math.Abs(item.P_gen - shema3.Find_Uzel_by_Nomer(item.Nomer_uzla).P_gen).ToString();
-                            er_Qbas = Math.Abs(item.Q_gen - shema3.Find_Uzel_by_Nomer(item.Nomer_uzla).Q_gen).ToString();
+                            er_Pbas = Math.Abs(item.PGen - shema3.Find_Uzel_by_Nomer(item.NomerUzla).PGen).ToString();
+                            er_Qbas = Math.Abs(item.QGen - shema3.Find_Uzel_by_Nomer(item.NomerUzla).QGen).ToString();
                         }
-                        if (item.Tip_uzla == 1)
+                        if (item.TipUzla == 1)
                         {
-                            if (item.Q_gen <= item.Q_max && item.Q_gen >= item.Q_min)
+                            if (item.QGen <= item.QMax && item.QGen >= item.QMin)
                                 kolvo_OGU++;
-                            if (Math.Abs(item.Q_gen - shema3.Find_Uzel_by_Nomer(item.Nomer_uzla).Q_gen) > er_Qgen)
-                                er_Qgen = Math.Abs(item.Q_gen - shema3.Find_Uzel_by_Nomer(item.Nomer_uzla).Q_gen);
+                            if (Math.Abs(item.QGen - shema3.Find_Uzel_by_Nomer(item.NomerUzla).QGen) > er_Qgen)
+                                er_Qgen = Math.Abs(item.QGen - shema3.Find_Uzel_by_Nomer(item.NomerUzla).QGen);
                         }
 
                     }
                     foreach (Uzel item in shema3.Uzli)
                     {
-                    if (item.Tip_uzla == 1 && item.Q_gen <= item.Q_max && item.Q_gen >= item.Q_min)
+                    if (item.TipUzla == 1 && item.QGen <= item.QMax && item.QGen >= item.QMin)
                             kolvo_OGU1++;
                     }
                     er_amp_average = er_amp_average / shema2.Uzli.Count;
@@ -383,123 +323,7 @@ namespace WindowsGraphica
             
         }
 
-        private void расчетАдрессностиToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter = "csv files|*.csv";
-            if (dialog.ShowDialog() != DialogResult.OK)
-                return;
-            string filename = dialog.FileName;
-            FileStream fs1 = new FileStream(filename, FileMode.CreateNew);
-            StreamWriter fs = new StreamWriter(fs1, System.Text.Encoding.Default);
-
-            shema1.Raschet(false, false, true);
-            Digraph di = new Digraph(shema1);
-            di.Formirov_Matrix_A();
-            di.save(fs);
-            fs.Close();
-
-            fs.Close();
-            fs1.Close();
-        }
-
-        private void расчетАдресностиПоПодсистемамаToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter = "csv files|*.csv";
-            if (dialog.ShowDialog() != DialogResult.OK)
-                return;
-            string filename = dialog.FileName;
-            FileStream fs1 = new FileStream(filename, FileMode.CreateNew);
-            StreamWriter fs = new StreamWriter(fs1, System.Text.Encoding.Default);
-
-            shema1.Raschet(false, false, true);
-            shema1.Opredelenie_rainov();
-            foreach (int i in shema1.Nomera_raionov)
-            {
-                Digraph_subsystem di = new Digraph_subsystem(shema1, i);
-                di.Raschet_A();
-                di.Save(fs);
-            }
-
-            fs.Close();
-            fs1.Close();
-        }
-
-        private void адресностьПоЧасамИПодсистемамToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter = "csv files|*.csv";
-            if (dialog.ShowDialog() != DialogResult.OK)
-                return;
-            string filename = dialog.FileName;
-            FileStream fs1 = new FileStream(filename, FileMode.CreateNew);
-            StreamWriter fs = new StreamWriter(fs1, System.Text.Encoding.Default);
-            shema1.Opredelenie_rainov();
-            List<dinamic_mass_d> A_gener = new List<dinamic_mass_d>();
-            List<dinamic_mass_d> A_nagr = new List<dinamic_mass_d>();
-            List<dinamic_mass_d> A_post = new List<dinamic_mass_d>();//постовлялось
-            List<dinamic_mass_d> A_per = new List<dinamic_mass_d>();//передано
-            List<dinamic_mass_d> A_pot = new List<dinamic_mass_d>();
-            List<dinamic_mass_d> A_pot_rai = new List<dinamic_mass_d>();
-            for (int i = 0; i < shema1.Nomera_raionov.Count; i++)
-            {
-                A_gener.Add(new dinamic_mass_d(shema1.Nomera_raionov,"Поступление система №"+shema1.Nomera_raionov[i].ToString()));
-                A_nagr.Add(new dinamic_mass_d(shema1.Nomera_raionov, "Отпуск системы №" + shema1.Nomera_raionov[i].ToString()));
-                A_post.Add(new dinamic_mass_d("Передавалось по системе №" + shema1.Nomera_raionov[i].ToString()));
-                A_per.Add(new dinamic_mass_d("Передано по системе №" + shema1.Nomera_raionov[i].ToString()));
-                A_pot.Add(new dinamic_mass_d("Потери в системе №" + shema1.Nomera_raionov[i].ToString()));
-                A_pot_rai.Add(new dinamic_mass_d("Потери в системе №" + shema1.Nomera_raionov[i].ToString()+" при прердачи по районам"));
-            }
-
-            for (int h = 0; h < 24; h++)
-            {
-                shema1.Rascet_Regima_po_Grafikam(h);
-
-                fs.WriteLine("/////");
-                fs.WriteLine("/////");
-                fs.WriteLine("///// час номер "+h.ToString());
-                fs.WriteLine("/////");
-                fs.WriteLine("/////");
-                foreach (int i in shema1.Nomera_raionov)
-                {
-                    Digraph_subsystem di = new Digraph_subsystem(shema1, i);
-                    di.Raschet_A();
-                    di.Save(fs);
-                    A_gener[shema1.Nomera_raionov.IndexOf(i)].Add_dinamic_mass_d(di.A_generator1);
-                    A_nagr[shema1.Nomera_raionov.IndexOf(i)].Add_dinamic_mass_d(di.A_nagr1);
-                    A_post[shema1.Nomera_raionov.IndexOf(i)].Add_dinamic_mass_d(di.A_peredano1);
-                    A_per[shema1.Nomera_raionov.IndexOf(i)].Add_dinamic_mass_d(di.A_postupilo1);
-                    A_pot[shema1.Nomera_raionov.IndexOf(i)].Add_dinamic_mass_d(di.A_poteri1);
-                    A_pot_rai[shema1.Nomera_raionov.IndexOf(i)].Add_dinamic_mass_d(di.A_poteri_raion1);
-                }
-            }
-
-
-            fs.WriteLine("/////");
-            fs.WriteLine("/////");
-            fs.WriteLine("///// Cумма " );
-            fs.WriteLine("/////");
-            fs.WriteLine("/////");
-            for (int i = 0; i < shema1.Nomera_raionov.Count; i++)
-            {
-                A_gener[i].Save(fs);
-                A_pot_rai[i].Save(fs);
-            }
-
-            /*
-            foreach (int i in shema1.Nomera_raionov)
-            {
-                A_gener[shema1.Nomera_raionov.IndexOf(i)].Save(fs);
-
-            }
-            */
-
-
-            fs.Close();
-            fs1.Close();
-            
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -511,142 +335,27 @@ namespace WindowsGraphica
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog dialog = new OpenFileDialog();
-            //dialog.Filter = "csv files|*.csv";
-            if (dialog.ShowDialog() != DialogResult.OK)
-                return;
-            string filename = dialog.FileName;
-
-            GrafikRaboti rab = new GrafikRaboti(shema1.Grafiki.Count);
-            StreamReader reader = new StreamReader(filename);
-            rab.LoadFromFile(reader);
-            bindingSource3.Add(rab);
-            //shema1.Grafiki.Add(rab);
-            //bindingSource3.DataSource = shema1.Grafiki;
-            
-            bindingNavigator3.Update();
-            dataGridView3.Update();
-            panel1.Invalidate();
-            //dataGridView3.ind
-        }
-
         private void bindingNavigatorAddNewItem2_Click(object sender, EventArgs e)
         {  }
-
-        private void bindingNavigatorAddNewItem3_Click(object sender, EventArgs e)
-        {
-            RPN r = new RPN();
-            r.Nomer_Vetvi_Izmenen += new RPN.Nomer_Vetvi_Changed(shema1.Nomer_Vetvi_Changed);
-            bindingSource4.Add(r);
-        }
-
-        private void расчетУРСАРНПоГрафикамToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter = "csv files|*.csv";
-            if (dialog.ShowDialog() != DialogResult.OK)
-                return;
-            string filename = dialog.FileName;
-            FileStream fs1 = new FileStream(filename, FileMode.CreateNew);
-            StreamWriter fs = new StreamWriter(fs1, System.Text.Encoding.Default);
-
-            int min=shema1.Grafiki[0].count;
-            foreach (GrafikRaboti g in shema1.Grafiki)
-                if (g.count < min)
-                    min = g.count;
-
-            fs.Write("time ;");
-            foreach (Uzel u in shema1.Uzli)
-            {
-                fs.Write(u.Nomer_uzla.ToString() + ";");
-            }
-            fs.WriteLine();
-            ARN.Start();
-
-            for (int h = 0; h < min; h++)
-            {
-                shema1.Rascet_Regima_po_Grafikam(h);                
-                fs.Write(h.ToString() + ";");
-                foreach (Uzel u in shema1.Uzli)
-                {
-                    fs.Write(u.U_mod.ToString() + ";");
-                }
-                fs.Write(shema1.Rpni[0].Nomer_Otpaiki.ToString() + ";");
-                fs.WriteLine();
-                ARN.Add_time();
-                label1.Text = h.ToString();
-                
-            }
-            ARN.Stop();
-
-            fs.Close();
-            fs1.Close();
-
-        }
 
         private void bindingNavigatorAddNewItem5_Click(object sender, EventArgs e)
         {
             
         }
 
-        private void расчетУРСАРКТПоГрафикамToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter = "csv files|*.csv";
-            if (dialog.ShowDialog() != DialogResult.OK)
-                return;
-            string filename = dialog.FileName;
-            FileStream fs1 = new FileStream(filename, FileMode.CreateNew);
-            StreamWriter fs = new StreamWriter(fs1, System.Text.Encoding.Default);
-
-            int min = shema1.Grafiki[0].count;
-            foreach (GrafikRaboti g in shema1.Grafiki)
-                if (g.count < min)
-                    min = g.count;
-
-            fs.Write("time ;");
-            foreach (Uzel u in shema1.Uzli)
-            {
-                fs.Write(u.Nomer_uzla.ToString() + ";");
-            }
-            fs.WriteLine();
-
-            AR.Nomer_Vetvi = 2;
-
-
-            for (int h = 0; h < min; h++)
-            {
-                shema1.Rascet_Regima_po_Grafikam(h);
-
-                fs.Write(h.ToString() + ";");
-                foreach (Uzel u in shema1.Uzli)
-                {
-                    fs.Write(u.U_mod.ToString() + ";");
-                }
-                fs.Write(shema1.Rpni[0].Nomer_Otpaiki.ToString() + ";");
-                fs.Write((shema1.Vetvi[1].I_Nach * 1000).ToString() + ";");
-                fs.WriteLine();
-
-                AR.Add_time();
-
-                if (AR.Is_Izmenen())
-                {
-                    shema1.Rpni[0].Izmenit_otpaiku(AR.Izmenenie_otpaiki1);
-                }                
-                label1.Text = h.ToString();
-            }
-
-            
-            fs.Close();
-            fs1.Close();
-
-        }
-
         private void bindingNavigatorAddNewItem5_Click_1(object sender, EventArgs e)
         {
 
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
        

@@ -28,11 +28,6 @@ namespace WindowsGraphica
         double delta_0_ij;
         double alfa;
         double y;
-        double eta_opt;//значение оптимальго угла управления при установки фрт в данную ветвь        
-        double deltaP_sum;//значение суммарных потерь при установки фрт в данную ветвь;        
-        bool napravlenie_moshnosti;//true если от конца к началу и false наоборот        
-        bool napravlenie_kontura;//true если от конца к началу и false наоборот  
-        double delta_ij_opt = 0;
         int nomer_raiona = 0;
         
 
@@ -42,11 +37,6 @@ namespace WindowsGraphica
         {
             get { return nomer_raiona; }
             set { nomer_raiona = value; }
-        }
-        public double Delta_ij_opt
-        {
-            get { return delta_ij_opt; }
-            set { delta_ij_opt = value; }
         }
         public int Nomer
         {
@@ -143,27 +133,7 @@ namespace WindowsGraphica
             get { return y; }
             set { y = value; }
         }
-        public double Eta_opt
-        {
-            get { return eta_opt; }
-            set { eta_opt = value; }
-        }
-        public double DeltaP_sum
-        {
-            get { return deltaP_sum; }
-            set { deltaP_sum = value; }
-        }
-
-        public bool Napravlenie_moshnosti
-        {
-            get { return napravlenie_moshnosti; }
-            set { napravlenie_moshnosti = value; }
-        }
-        public bool Napravlenie_kontura
-        {
-            get { return napravlenie_kontura; }
-            set { napravlenie_kontura = value; }
-        }
+      
         #endregion
 
         #region CDU
@@ -182,7 +152,7 @@ namespace WindowsGraphica
 
         public bool LoadFromCDU(string s)
         {
-            bool flag_res = false;
+            var flagRes = false;
             string str = "";
             const string pusto = "        ";
             switch (s.Substring(0, 4))
@@ -221,17 +191,17 @@ namespace WindowsGraphica
                                 else
                                     Gc = 0;
                             }
-                            flag_res = true;
+                            flagRes = true;
                             if (R == 0 && X == 0)
                                 X = 0.01;
                         }
                     }
                     break;
                 default:
-                    flag_res = false;
+                    flagRes = false;
                     break;
             }
-            return flag_res;
+            return flagRes;
 
         }
 

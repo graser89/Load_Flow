@@ -77,17 +77,17 @@ namespace TestWindowsGraphica
         public void RaschetTest()
         {
             bool fl1 = true;  //true -плоский старт
-            bool fl2 = false;   //стартовый алгоритм
-            bool fl3 = false;  //true-поляр  false- прям
+            bool fl2 = true;   //стартовый алгоритм
+            bool fl3 = true;  //true-поляр  false- прям
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/PROBA1.CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/PROBA1.CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
                 double U1 = (106.10);
                 double eps = (0.05);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -104,9 +104,9 @@ namespace TestWindowsGraphica
         {
             bool fl1 = true;  //true -плоский старт
             bool fl2 = false;   //стартовый алгоритм
-            bool fl3 = false;  //true-поляр  false- прям
+            bool fl3=true;  //true-поляр  false- прям
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/PROBA2.CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/PROBA2.CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -114,7 +114,7 @@ namespace TestWindowsGraphica
                 double eps = (0.01);
 
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -131,9 +131,9 @@ namespace TestWindowsGraphica
         {
             bool fl1 = true;  //true -плоский старт
             bool fl2 = false;   //стартовый алгоритм
-            bool fl3 = false;  //true-поляр  false- прям
+            bool fl3=true;  //true-поляр  false- прям
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/PROBA3.CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/PROBA3.CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -141,8 +141,8 @@ namespace TestWindowsGraphica
                 double U3 = (96);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -159,9 +159,9 @@ namespace TestWindowsGraphica
         {
             bool fl1 = true;  //true -плоский старт
             bool fl2 = false;   //стартовый алгоритм
-            bool fl3 = false;  //true-поляр  false- прям
+            bool fl3=true;  //true-поляр  false- прям
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/PROBA4.CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/PROBA4.CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -169,8 +169,8 @@ namespace TestWindowsGraphica
                 double U3 = (94.27);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -187,9 +187,9 @@ namespace TestWindowsGraphica
         {
             bool fl1 = true;  //true -плоский старт
             bool fl2 = false;   //стартовый алгоритм
-            bool fl3 = false;  //true-поляр  false- прям
+            bool fl3=true;  //true-поляр  false- прям
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/PROBA5.CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/PROBA5.CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -198,9 +198,9 @@ namespace TestWindowsGraphica
                 double U4 = (8.09);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -215,7 +215,7 @@ namespace TestWindowsGraphica
         public void RaschetTest6()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/PROBA6.CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/PROBA6.CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -228,9 +228,9 @@ namespace TestWindowsGraphica
 
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
@@ -248,7 +248,7 @@ namespace TestWindowsGraphica
         public void RaschetTest7()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/PROBA7.CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/PROBA7.CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -262,10 +262,10 @@ namespace TestWindowsGraphica
                 double d5 = (-4.98);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
@@ -285,7 +285,7 @@ namespace TestWindowsGraphica
         public void RaschetTest8()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/PROBA8.CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/PROBA8.CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -299,10 +299,10 @@ namespace TestWindowsGraphica
                 double d5 = (-3.92);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
@@ -321,7 +321,7 @@ namespace TestWindowsGraphica
         public void RaschetTest9()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/PROBA9.CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/PROBA9.CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -335,10 +335,10 @@ namespace TestWindowsGraphica
                 double d5 = (-5.28);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
@@ -357,7 +357,7 @@ namespace TestWindowsGraphica
         public void RaschetTest10()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/PROBA10.CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/PROBA10.CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -373,11 +373,11 @@ namespace TestWindowsGraphica
                 double d5 = (-10.52);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -398,7 +398,7 @@ namespace TestWindowsGraphica
         public void Test1()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test1.CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test1.CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -414,11 +414,11 @@ namespace TestWindowsGraphica
                 double d5 = (-3.34);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -438,7 +438,7 @@ namespace TestWindowsGraphica
         public void Test2()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test2.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test2.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -454,11 +454,11 @@ namespace TestWindowsGraphica
                 double d5 = (-3.85);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -479,7 +479,7 @@ namespace TestWindowsGraphica
         public void Test3()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test3.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test3.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -493,10 +493,10 @@ namespace TestWindowsGraphica
                 double d4 = (-2.82);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -516,7 +516,7 @@ namespace TestWindowsGraphica
         public void Test4()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test4.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test4.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -532,11 +532,11 @@ namespace TestWindowsGraphica
                 double d5 = (0.0);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -557,7 +557,7 @@ namespace TestWindowsGraphica
         public void Test5()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test5.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test5.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -571,10 +571,10 @@ namespace TestWindowsGraphica
                 double d4 = (-5.75);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -608,10 +608,10 @@ namespace TestWindowsGraphica
                 double d4 = (-7.15);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -631,7 +631,7 @@ namespace TestWindowsGraphica
         public void Test7()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test7.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test7.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -645,10 +645,10 @@ namespace TestWindowsGraphica
                 double d4 = (-6.23);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -668,7 +668,7 @@ namespace TestWindowsGraphica
         public void Test8()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test8.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test8.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -682,10 +682,10 @@ namespace TestWindowsGraphica
                 double d4 = (-5.87);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -705,7 +705,7 @@ namespace TestWindowsGraphica
         public void Test9()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test9.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test9.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -719,10 +719,10 @@ namespace TestWindowsGraphica
                 double d4 = (-5.69);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -742,7 +742,7 @@ namespace TestWindowsGraphica
         public void Test10()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test10.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test10.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -756,10 +756,10 @@ namespace TestWindowsGraphica
                 double d4 = (-5.68);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -779,7 +779,7 @@ namespace TestWindowsGraphica
         public void Test11()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test11.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test11.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -793,10 +793,10 @@ namespace TestWindowsGraphica
                 double d4 = (-7.84);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -816,7 +816,7 @@ namespace TestWindowsGraphica
         public void Test12()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test12.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test12.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -830,10 +830,10 @@ namespace TestWindowsGraphica
                 double d4 = (-5.22);
                 double eps = (0.01);    //не пройден, когда два тр-ра
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -853,7 +853,7 @@ namespace TestWindowsGraphica
         public void Test13()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test12(1).CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test12(1).CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -867,10 +867,10 @@ namespace TestWindowsGraphica
                 double d4 = (-5.23);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -890,7 +890,7 @@ namespace TestWindowsGraphica
         public void Test14()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test13.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test13.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -904,10 +904,10 @@ namespace TestWindowsGraphica
                 double d4 = (-7.87);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -927,7 +927,7 @@ namespace TestWindowsGraphica
         public void Test15()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test14.CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test14.CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -941,10 +941,10 @@ namespace TestWindowsGraphica
                 double d4 = (-6.02);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -980,11 +980,11 @@ namespace TestWindowsGraphica
                 double d5 = (-8.54);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -1005,7 +1005,7 @@ namespace TestWindowsGraphica
         public void Test17()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test16.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test16.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1027,14 +1027,14 @@ namespace TestWindowsGraphica
                 double d8 = (-10.26);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -1058,7 +1058,7 @@ namespace TestWindowsGraphica
         public void Test18()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test17.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test17.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1082,15 +1082,15 @@ namespace TestWindowsGraphica
                 double d9 = (-19.09);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).U_mod - U9) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).UMod - U9) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -1115,7 +1115,7 @@ namespace TestWindowsGraphica
         public void Test19()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test18.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test18.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1149,20 +1149,20 @@ namespace TestWindowsGraphica
                 double d14 = (-21.03);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).U_mod - U9) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).U_mod - U10) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).U_mod - U11) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).U_mod - U12) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).U_mod - U13) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).U_mod - U14) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).UMod - U9) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).UMod - U10) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).UMod - U11) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).UMod - U12) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).UMod - U13) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).UMod - U14) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -1193,7 +1193,7 @@ namespace TestWindowsGraphica
         public void Test20()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test19.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test19.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1229,21 +1229,21 @@ namespace TestWindowsGraphica
                 double d15 = (0.0);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).U_mod - U9) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).U_mod - U10) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).U_mod - U11) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).U_mod - U12) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).U_mod - U13) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).U_mod - U14) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).U_mod - U15) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).UMod - U9) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).UMod - U10) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).UMod - U11) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).UMod - U12) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).UMod - U13) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).UMod - U14) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).UMod - U15) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -1274,7 +1274,7 @@ namespace TestWindowsGraphica
         public void Test21()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test20.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test20.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1294,13 +1294,13 @@ namespace TestWindowsGraphica
                 double d7 = (0.34);
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(100).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(200).U_mod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(100).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(200).UMod - U7) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -1323,7 +1323,7 @@ namespace TestWindowsGraphica
         public void Test22()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test21.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test21.CDU"); ;    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1335,11 +1335,11 @@ namespace TestWindowsGraphica
                 double eps = (0.01);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Q_gen - Q2) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).QGen - Q2) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1355,7 +1355,7 @@ namespace TestWindowsGraphica
         public void Test23()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test22.CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test22.CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1369,13 +1369,13 @@ namespace TestWindowsGraphica
                 double eps = (0.01);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1391,7 +1391,7 @@ namespace TestWindowsGraphica
         public void Test24()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test23.CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test23.CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1407,15 +1407,15 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1431,7 +1431,7 @@ namespace TestWindowsGraphica
         public void Test25()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test23(1).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test23(1).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1447,15 +1447,15 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1471,7 +1471,7 @@ namespace TestWindowsGraphica
         public void Test26()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test23(2).CDU");   //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test23(2).CDU");   //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1487,15 +1487,15 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1511,7 +1511,7 @@ namespace TestWindowsGraphica
         public void Test27()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test24.CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test24.CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1530,18 +1530,18 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).Angle * (double)(180 / Math.PI) - d5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1557,7 +1557,7 @@ namespace TestWindowsGraphica
         public void Test28()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test24(1).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test24(1).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1576,18 +1576,18 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).Angle * (double)(180 / Math.PI) - d5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1603,7 +1603,7 @@ namespace TestWindowsGraphica
         public void Test29()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test24(2).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test24(2).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1622,18 +1622,18 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).Angle * (double)(180 / Math.PI) - d5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1649,7 +1649,7 @@ namespace TestWindowsGraphica
         public void Test30()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test24(3).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test24(3).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1668,18 +1668,18 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).Angle * (double)(180 / Math.PI) - d5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1695,7 +1695,7 @@ namespace TestWindowsGraphica
         public void Test31()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test24(4).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test24(4).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1714,18 +1714,18 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).Angle * (double)(180 / Math.PI) - d5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1741,7 +1741,7 @@ namespace TestWindowsGraphica
         public void Test32()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test24(5).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test24(5).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1760,18 +1760,18 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).Angle * (double)(180 / Math.PI) - d5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1787,7 +1787,7 @@ namespace TestWindowsGraphica
         public void Test33()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test25.CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test25.CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(false, fl2, fl3);
@@ -1829,21 +1829,21 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).U_mod - U9) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).U_mod - U10) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).U_mod - U11) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).U_mod - U12) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).U_mod - U13) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).U_mod - U14) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).U_mod - U15) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).UMod - U9) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).UMod - U10) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).UMod - U11) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).UMod - U12) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).UMod - U13) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).UMod - U14) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).UMod - U15) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -1859,11 +1859,11 @@ namespace TestWindowsGraphica
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).Angle * (double)(180 / Math.PI) - d13) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).Angle * (double)(180 / Math.PI) - d14) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).Angle * (double)(180 / Math.PI) - d15) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).Q_gen - Q8) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).Q_gen - Q10) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).Q_gen - Q11) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).QGen - Q8) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).QGen - Q10) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).QGen - Q11) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1880,7 +1880,7 @@ namespace TestWindowsGraphica
         public void Test34()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test25(1).CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test25(1).CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -1922,21 +1922,21 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).U_mod - U9) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).U_mod - U10) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).U_mod - U11) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).U_mod - U12) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).U_mod - U13) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).U_mod - U14) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).U_mod - U15) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).UMod - U9) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).UMod - U10) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).UMod - U11) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).UMod - U12) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).UMod - U13) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).UMod - U14) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).UMod - U15) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -1952,11 +1952,11 @@ namespace TestWindowsGraphica
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).Angle * (double)(180 / Math.PI) - d13) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).Angle * (double)(180 / Math.PI) - d14) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).Angle * (double)(180 / Math.PI) - d15) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).Q_gen - Q8) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).Q_gen - Q10) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).Q_gen - Q11) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).QGen - Q8) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).QGen - Q10) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).QGen - Q11) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -1972,7 +1972,7 @@ namespace TestWindowsGraphica
         public void Test35()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test25(2).CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test25(2).CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -2014,21 +2014,21 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).U_mod - U9) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).U_mod - U10) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).U_mod - U11) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).U_mod - U12) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).U_mod - U13) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).U_mod - U14) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).U_mod - U15) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).UMod - U9) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).UMod - U10) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).UMod - U11) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).UMod - U12) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).UMod - U13) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).UMod - U14) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).UMod - U15) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -2044,11 +2044,11 @@ namespace TestWindowsGraphica
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).Angle * (double)(180 / Math.PI) - d13) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).Angle * (double)(180 / Math.PI) - d14) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).Angle * (double)(180 / Math.PI) - d15) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).Q_gen - Q8) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).Q_gen - Q10) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).Q_gen - Q11) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).QGen - Q8) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).QGen - Q10) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).QGen - Q11) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -2064,7 +2064,7 @@ namespace TestWindowsGraphica
         public void Test36()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test25(3).CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test25(3).CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -2106,21 +2106,21 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).U_mod - U9) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).U_mod - U10) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).U_mod - U11) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).U_mod - U12) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).U_mod - U13) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).U_mod - U14) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).U_mod - U15) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).UMod - U9) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).UMod - U10) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).UMod - U11) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).UMod - U12) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).UMod - U13) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).UMod - U14) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).UMod - U15) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -2136,11 +2136,11 @@ namespace TestWindowsGraphica
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).Angle * (double)(180 / Math.PI) - d13) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).Angle * (double)(180 / Math.PI) - d14) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).Angle * (double)(180 / Math.PI) - d15) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).Q_gen - Q8) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).Q_gen - Q10) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).Q_gen - Q11) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).QGen - Q8) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).QGen - Q10) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).QGen - Q11) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -2157,7 +2157,7 @@ namespace TestWindowsGraphica
         public void Test37()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test25(4).CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test25(4).CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -2199,21 +2199,21 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).U_mod - U9) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).U_mod - U10) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).U_mod - U11) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).U_mod - U12) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).U_mod - U13) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).U_mod - U14) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).U_mod - U15) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).UMod - U9) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).UMod - U10) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).UMod - U11) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).UMod - U12) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).UMod - U13) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).UMod - U14) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).UMod - U15) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -2229,11 +2229,11 @@ namespace TestWindowsGraphica
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).Angle * (double)(180 / Math.PI) - d13) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).Angle * (double)(180 / Math.PI) - d14) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).Angle * (double)(180 / Math.PI) - d15) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).Q_gen - Q8) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).Q_gen - Q10) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).Q_gen - Q11) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).QGen - Q8) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).QGen - Q10) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).QGen - Q11) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -2250,7 +2250,7 @@ namespace TestWindowsGraphica
         public void Test38()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test25(5).CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test25(5).CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -2292,21 +2292,21 @@ namespace TestWindowsGraphica
                 double eps = (0.9);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).U_mod - U9) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).U_mod - U10) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).U_mod - U11) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).U_mod - U12) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).U_mod - U13) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).U_mod - U14) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).U_mod - U15) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).UMod - U9) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).UMod - U10) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).UMod - U11) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).UMod - U12) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).UMod - U13) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).UMod - U14) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).UMod - U15) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -2322,11 +2322,11 @@ namespace TestWindowsGraphica
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).Angle * (double)(180 / Math.PI) - d13) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).Angle * (double)(180 / Math.PI) - d14) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).Angle * (double)(180 / Math.PI) - d15) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).Q_gen - Q8) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).Q_gen - Q10) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).Q_gen - Q11) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).QGen - Q8) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).QGen - Q10) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).QGen - Q11) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -2343,7 +2343,7 @@ namespace TestWindowsGraphica
         public void Test39()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test25(6).CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test25(6).CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -2385,21 +2385,21 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).U_mod - U9) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).U_mod - U10) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).U_mod - U11) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).U_mod - U12) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).U_mod - U13) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).U_mod - U14) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).U_mod - U15) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).UMod - U9) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).UMod - U10) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).UMod - U11) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).UMod - U12) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).UMod - U13) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).UMod - U14) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).UMod - U15) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -2415,11 +2415,11 @@ namespace TestWindowsGraphica
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).Angle * (double)(180 / Math.PI) - d13) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).Angle * (double)(180 / Math.PI) - d14) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).Angle * (double)(180 / Math.PI) - d15) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).Q_gen - Q8) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).Q_gen - Q10) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).Q_gen - Q11) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).QGen - Q8) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).QGen - Q10) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).QGen - Q11) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -2435,7 +2435,7 @@ namespace TestWindowsGraphica
         public void Test40()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test25(7).CDU");
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test25(7).CDU");
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
@@ -2477,21 +2477,21 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).U_mod - U9) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).U_mod - U10) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).U_mod - U11) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).U_mod - U12) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).U_mod - U13) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).U_mod - U14) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).U_mod - U15) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).UMod - U9) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).UMod - U10) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).UMod - U11) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).UMod - U12) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).UMod - U13) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).UMod - U14) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).UMod - U15) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -2507,11 +2507,11 @@ namespace TestWindowsGraphica
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).Angle * (double)(180 / Math.PI) - d13) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).Angle * (double)(180 / Math.PI) - d14) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).Angle * (double)(180 / Math.PI) - d15) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).Q_gen - Q8) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).Q_gen - Q10) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).Q_gen - Q11) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).QGen - Q8) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).QGen - Q10) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).QGen - Q11) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -2569,21 +2569,21 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).U_mod - U6) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).U_mod - U7) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).U_mod - U8) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).U_mod - U9) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).U_mod - U10) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).U_mod - U11) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).U_mod - U12) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).U_mod - U13) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).U_mod - U14) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).U_mod - U15) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(6).UMod - U6) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(7).UMod - U7) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).UMod - U8) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(9).UMod - U9) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).UMod - U10) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).UMod - U11) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(12).UMod - U12) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).UMod - U13) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).UMod - U14) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).UMod - U15) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
@@ -2599,11 +2599,11 @@ namespace TestWindowsGraphica
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(13).Angle * (double)(180 / Math.PI) - d13) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(14).Angle * (double)(180 / Math.PI) - d14) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(15).Angle * (double)(180 / Math.PI) - d15) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).Q_gen - Q8) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).Q_gen - Q10) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).Q_gen - Q11) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(8).QGen - Q8) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(10).QGen - Q10) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(11).QGen - Q11) < epsQ);
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -2620,15 +2620,10 @@ namespace TestWindowsGraphica
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
 
-            StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/test24(2).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
+            StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/test24(2).CDU");    //ВОТ ЗДЕСЬ НУЖНО БУДЕТ ВСТАВИТЬ ВЕРНЫЙ ПУТЬ
             if (target.LoadFromCDU(reader))
             {
                 target.Raschet(fl1, fl2, fl3);
-                Digraph di = new Digraph(target);
-                List<Digrph_uzel> list = new List<Digrph_uzel>();
-
-                list = di.Find_uzli_pitiuch_ot_Uzla(4);
-
                 double U1 = (120.0);
                 double U2 = (112.17);
                 double U3 = (110.0);
@@ -2644,19 +2639,19 @@ namespace TestWindowsGraphica
                 double eps = (0.015);
                 double epsQ = (0.2);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).U_mod - U1) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).U_mod - U5) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).UMod - U1) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).UMod - U5) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(1).Angle * (double)(180 / Math.PI) - d1) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(5).Angle * (double)(180 / Math.PI) - d5) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Q_gen - Q3) < epsQ);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Q_gen - Q4) < epsQ);
-                Assert.IsTrue(list.Count == 4);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).QGen - Q3) < epsQ);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).QGen - Q4) < epsQ);
+                
             }
             else
                 Assert.Inconclusive("Невозможно проверить метод, не возвращающий значение.");
@@ -2671,22 +2666,17 @@ namespace TestWindowsGraphica
         public void RaschetTest_digrapg1()
         {
             Shema target = new Shema(); // TODO: инициализация подходящего значения
-            XmlTextReader reader = new XmlTextReader("C://Users/Грамма/Documents/проба11.xml");
-            //StreamReader reader = new StreamReader("C://Users/Грамма/Documents/Visual Studio 2010/Projects/FlowTests/PROBA6.CDU");
+            XmlTextReader reader = new XmlTextReader("C://Users/gramma/Documents/проба11.xml");
+            //StreamReader reader = new StreamReader("C://Users/gramma/Documents/Visual Studio 2013/Projects/FlowTests/PROBA6.CDU");
             target.LoadFromFile(reader);
 
-            string filename = "C://Users/Грамма/Documents/проба25.csv";
+            string filename = "C://Users/gramma/Documents/проба25.csv";
             FileStream fs1 = new FileStream(filename, FileMode.CreateNew);
             StreamWriter fs = new StreamWriter(fs1, System.Text.Encoding.Default);
 
             target.Raschet(false, false, true);
             target.Opredelenie_rainov();
-            foreach (int i in target.Nomera_raionov)
-            {
-                Digraph_subsystem di = new Digraph_subsystem(target, i);
-                di.Raschet_A();
-                di.Save(fs);
-            }
+            
             fs.Close();
             fs1.Close();
 
@@ -2701,9 +2691,9 @@ namespace TestWindowsGraphica
 
                 double eps = (0.01);
                 //Assert.AreEqual((0.0447213595499958), target.Y_balanc[0]);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).U_mod - U2) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).U_mod - U3) < eps);
-                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).U_mod - U4) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).UMod - U2) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).UMod - U3) < eps);
+                Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).UMod - U4) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(2).Angle * (double)(180 / Math.PI) - d2) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(3).Angle * (double)(180 / Math.PI) - d3) < eps);
                 Assert.IsTrue(Math.Abs(target.Find_Uzel_by_Nomer(4).Angle * (double)(180 / Math.PI) - d4) < eps);

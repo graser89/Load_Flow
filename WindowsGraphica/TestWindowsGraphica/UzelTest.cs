@@ -84,57 +84,57 @@ namespace TestWindowsGraphica
             List<Uzel> Uzli = new List<Uzel>(); 
 
             Uzel target = new Uzel(); // TODO: инициализация подходящего значения
-            target.Tip_uzla = 0;
-            target.U_nom = 110;
+            target.TipUzla = 0;
+            target.UNom = 110;
             Uzli.Add(target);
 
             target = new Uzel(); // TODO: инициализация подходящего значения
-            target.Tip_uzla = -1;
-            target.U_nom = 10;
+            target.TipUzla = -1;
+            target.UNom = 10;
             Uzli.Add(target);
 
             target = new Uzel(); // TODO: инициализация подходящего значения
-            target.Tip_uzla = 0;
-            target.U_nom = 220;
+            target.TipUzla = 0;
+            target.UNom = 220;
             Uzli.Add(target);
 
             target = new Uzel(); // TODO: инициализация подходящего значения
-            target.Tip_uzla = 0;
-            target.U_nom = 220;
+            target.TipUzla = 0;
+            target.UNom = 220;
             Uzli.Add(target);
 
             target = new Uzel(); // TODO: инициализация подходящего значения
-            target.Tip_uzla = 1;
-            target.U_nom = 220;
+            target.TipUzla = 1;
+            target.UNom = 220;
             Uzli.Add(target);
 
             target = new Uzel(); // TODO: инициализация подходящего значения
-            target.Tip_uzla = 1;
-            target.U_nom = 110;
+            target.TipUzla = 1;
+            target.UNom = 110;
             Uzli.Add(target);
 
             target = new Uzel(); // TODO: инициализация подходящего значения
-            target.Tip_uzla = 0;
-            target.U_nom = 10;
+            target.TipUzla = 0;
+            target.UNom = 10;
             Uzli.Add(target);
 
             target = new Uzel(); // TODO: инициализация подходящего значения
-            target.Tip_uzla = 0;
-            target.U_nom = 10;
+            target.TipUzla = 0;
+            target.UNom = 10;
             Uzli.Add(target);
 
 
             Uzli.Sort();
 
             Uzel expected = new Uzel(); // TODO: инициализация подходящего значения
-            expected.Tip_uzla = -1;
-            expected.U_nom = 10;
+            expected.TipUzla = -1;
+            expected.UNom = 10;
             
            // object obj = null; // TODO: инициализация подходящего значения
            // int expected = 0; // TODO: инициализация подходящего значения
            // int actual;
            // actual = target.CompareTo(obj);
-            Assert.AreEqual(expected.Tip_uzla, Uzli[7].Tip_uzla);
+            Assert.AreEqual(expected.TipUzla, Uzli[7].TipUzla);
             //Assert.Inconclusive("Проверьте правильность этого метода теста.");
         }
         ///01234567890123456789
@@ -158,16 +158,16 @@ namespace TestWindowsGraphica
                 decimal U_zad = 525;
                 int q_min = -9999;
                 int q_max = 9999;
-                Assert.AreEqual(nomer, target.Nomer_uzla);
-                Assert.AreEqual(U_nom, target.U_nom);
-                Assert.AreEqual(P_load, target.P_load);
-                Assert.AreEqual(Q_load, target.Q_load);
-                Assert.AreEqual(P_gen, target.P_gen);
-                Assert.AreEqual(Q_gen, target.Q_gen);
-                Assert.AreEqual(U_zad, target.U_zad);
-                Assert.AreEqual(q_min, target.Q_min);
-                Assert.AreEqual(q_max, target.Q_max);
-                Assert.AreEqual(1, target.Tip_uzla);
+                Assert.AreEqual(nomer, target.NomerUzla);
+                Assert.AreEqual(U_nom, target.UNom);
+                Assert.AreEqual(P_load, target.PLoad);
+                Assert.AreEqual(Q_load, target.QLoad);
+                Assert.AreEqual(P_gen, target.PGen);
+                Assert.AreEqual(Q_gen, target.QGen);
+                Assert.AreEqual(U_zad, target.UZad);
+                Assert.AreEqual(q_min, target.QMin);
+                Assert.AreEqual(q_max, target.QMax);
+                Assert.AreEqual(1, target.TipUzla);
             }
             else
                 Assert.Inconclusive("Ошибка");
@@ -187,16 +187,16 @@ namespace TestWindowsGraphica
                 decimal U_mod = 0;
                 int q_min = 0;
                 int q_max = 0;
-                Assert.AreEqual(nomer, target.Nomer_uzla);
-                Assert.AreEqual(U_nom, target.U_nom);
-                Assert.AreEqual(P_load, target.P_load);
-                Assert.AreEqual(Q_load, target.Q_load);
-                Assert.AreEqual(P_gen, target.P_gen);
-                Assert.AreEqual(Q_gen, target.Q_gen);
-                Assert.AreEqual(U_mod, target.U_mod);
-                Assert.AreEqual(q_min, target.Q_min);
-                Assert.AreEqual(q_max, target.Q_max);
-                Assert.AreEqual(0, target.Tip_uzla);
+                Assert.AreEqual(nomer, target.NomerUzla);
+                Assert.AreEqual(U_nom, target.UNom);
+                Assert.AreEqual(P_load, target.PLoad);
+                Assert.AreEqual(Q_load, target.QLoad);
+                Assert.AreEqual(P_gen, target.PGen);
+                Assert.AreEqual(Q_gen, target.QGen);
+                Assert.AreEqual(U_mod, target.UMod);
+                Assert.AreEqual(q_min, target.QMin);
+                Assert.AreEqual(q_max, target.QMax);
+                Assert.AreEqual(0, target.TipUzla);
             }
             else
                 Assert.Inconclusive("Ошибка");
@@ -208,8 +208,8 @@ namespace TestWindowsGraphica
                 decimal U_mod = new decimal(224.99);
                 decimal angel = new decimal(0.23);
                 
-                Assert.AreEqual(nomer, target.Nomer_uzla);
-                Assert.AreEqual(U_mod, target.U_mod);
+                Assert.AreEqual(nomer, target.NomerUzla);
+                Assert.AreEqual(U_mod, target.UMod);
                 Assert.AreEqual(angel, target.Angle);
                 
             }
@@ -222,8 +222,8 @@ namespace TestWindowsGraphica
                 {
                     int nomer = 10;
                     decimal b_sh = new decimal(653);                    
-                    Assert.AreEqual(nomer, target.Nomer_uzla);                    
-                    Assert.AreEqual(b_sh, target.B_sh);
+                    Assert.AreEqual(nomer, target.NomerUzla);                    
+                    Assert.AreEqual(b_sh, target.BSh);
 
                 }
                 else
