@@ -58,3 +58,11 @@ C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\W
 C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form1.resources
 C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Properties.Resources.resources
 C:\Users\gramma\Documents\Visual Studio 2013\Projects\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.csproj.GenerateResource.Cache
+C:\Users\gramma\Downloads\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.exe
+C:\Users\gramma\Downloads\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.pdb
+C:\Users\gramma\Downloads\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.exe
+C:\Users\gramma\Downloads\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\bin\Debug\WindowsGraphica.pdb
+C:\Users\gramma\Downloads\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.csprojResolveAssemblyReference.cache
+C:\Users\gramma\Downloads\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Form1.resources
+C:\Users\gramma\Downloads\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.Properties.Resources.resources
+C:\Users\gramma\Downloads\WindowsGraphica_10_03_12\WindowsGraphica\WindowsGraphica\obj\x86\Debug\WindowsGraphica.csproj.GenerateResource.Cache

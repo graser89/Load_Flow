@@ -205,7 +205,7 @@ namespace WindowsGraphica
 
                     Complex U2 = V - Complex.ImaginaryOne * Q1 / (Y * Complex.Conjugate(U_k_1));
                     Moshnst[index] = new Complex(Moshnst[index].Real, Q1);
-                    U_new = U1;
+                    U_new = U_k_1;
                 }
                 else
                 {
